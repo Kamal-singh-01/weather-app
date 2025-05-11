@@ -114,17 +114,21 @@ const inputRef = useRef();
         {/* Weather details section */}
         <div className='grid grid-cols-2 gap-4 text-center'>
           {/* Humidity card */}
-          <div className='flex flex-col items-center bg-blue-100 p-4 rounded-lg shadow'>
-            <img className='w-10 h-10 mb-2' src={humidity_icon} alt="humidity icon" />
-            <p className='text-lg font-semibold text-gray-800'>{weatherData.humidity}%</p>
-            <span className='text-sm text-gray-600'>Humidity</span>
+          <div className='flex flex-col items-center bg-gradient-to-b from-blue-50 to-blue-100 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'>
+            <div className='bg-blue-400 p-2 rounded-full mb-2 flex items-center justify-center'>
+              <img className='w-8 h-8' src={humidity_icon} alt="humidity icon" />
+            </div>
+            <p className='text-lg font-semibold text-blue-800'>{weatherData.humidity}%</p>
+            <span className='text-sm text-blue-600'>Humidity</span>
           </div>
 
           {/* Wind speed card */}
-          <div className='flex flex-col items-center bg-blue-100 p-4 rounded-lg shadow'>
-            <img className='w-10 h-10 mb-2' src={wind_icon} alt='wind icon' />
-            <p className='text-lg font-semibold text-gray-800'>{weatherData.wind}km/h</p>
-            <span className='text-sm text-gray-600'>Wind Speed</span>
+          <div className='flex flex-col items-center bg-gradient-to-b from-blue-50 to-blue-100 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'>
+            <div className='bg-blue-500 p-2 rounded-full mb-2 flex items-center justify-center'>
+              <img className='w-8 h-8' src={wind_icon} alt='wind icon' />
+            </div>
+            <p className='text-lg font-semibold text-blue-800'>{weatherData.wind}km/h</p>
+            <span className='text-sm text-blue-600'>Wind Speed</span>
           </div>
         </div>
 
